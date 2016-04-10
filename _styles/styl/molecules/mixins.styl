@@ -1,0 +1,86 @@
+border-radius (n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+transition (prop, time, ease)
+  -webkit-transition prop time ease
+  -moz-transition prop time ease
+  -o-transition prop time ease
+  -ms-transition prop time ease
+  transition prop time ease
+
+gradient (origin, start, stop)
+  background-color start
+  background-image -webkit-linear-gradient(origin, start, stop)
+  background-image -moz-linear-gradient(origin, start, stop)
+  background-image -o-linear-gradient(origin, start, stop)
+  background-image -ms-linear-gradient(origin, start, stop)
+  background-image linear-gradient(origin, start, stop)
+
+// ie9
+//   gradient (iestart, iestop)
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=iestart, endColorstr=iestop,GradientType=0 )
+
+drop-shadow (inset, x, y, blur, spread, alpha)
+  -webkit-box-shadow inset x y blur spread alpha
+  -moz-box-shadow inset x y blur spread alpha
+  box-shadow inset x y blur spread alpha
+
+opacity (opacity)
+  -webkit-opacity opacity
+  -moz-opacity opacity
+  opacity opacity
+
+animation (name, duration, delay, ease)
+  -webkit-animation name duration delay ease
+  -moz-animation name duration delay ease
+  -ms-animation name duration delay ease
+
+transform (string)
+  -webkit-transform string
+  -moz-transform string
+  -ms-transform string
+  -o-transform string
+
+scale (factor)
+  -webkit-transform scale(factor)
+  -moz-transform scale(factor)
+  -ms-transform scale(factor)
+  -o-transform scale(factor)
+
+rotate (deg)
+  -webkit-transform rotate(deg)
+  -moz-transform rotate(deg)
+  -ms-transform rotate(deg)
+  -o-transform rotate(deg)
+
+skew (deg, deg2)
+  -webkit-transform skew(deg, deg2)
+  -moz-transform skew(deg, deg2)
+  -ms-transform skew(deg, deg2)
+  -o-transform skew(deg, deg2)
+
+translate (x, y)
+  -webkit-transform translate(x, y)
+  -moz-transform translate(x, y)
+  -ms-transform translate(x, y)
+  -o-transform translate(x, y)
+
+translate3d (x, y, z)
+  -webkit-transform translate3d(x, y, z)
+  -moz-transform translate3d(x, y, z)
+  -ms-transform translate3d(x, y, z)
+  -o-transform translate3d(x, y, z)
+
+perspective (value)
+  -webkit-perspective value
+  -moz-perspective value
+  -ms-perspective value
+  perspective value
+
+transform-origin (x, y)
+  -webkit-transform-origin x y
+  -moz-transform-origin x y
+  -ms-transform-origin x y
+  -o-transform-origin x y
