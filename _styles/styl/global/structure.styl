@@ -1,19 +1,26 @@
+html
+  font-size: $primary-font-size
+body
+  font-size: 1rem
+
 .wrapper
-    display table
-    height 100%
-    width 100%
-  .main
-      display table-row
-      height 100%
-    aside
-        display table-cell
-        min-width 340px
-        width 340px
-        background-color pink
-    section
-        display table-cell
-        width 100%
-        background-color green
+  display: table
+  height: 100%
+  position: relative
+  width: 100%
+  z-index: 1
+.main
+  display: table-row
+  height: 100%
+  aside
+    display: table-cell
+    min-width: 800px
+    width: 800px
+    background-color: transparent
+  section
+    display: table-cell
+    width: 100%
+    background-color: transparent
 .grid
-  max-width 1000px
-  margin 0 auto
+  max-width: 1000px
+  margin: 0 auto

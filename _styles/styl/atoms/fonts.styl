@@ -1,12 +1,14 @@
-.light
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300
-.regular 
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500
-.bold
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700
-.black 
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900
+
+$primary-font = 'Source Sans Pro'
+$performance-font = 'Helvetica', 'Arial', sans-serif
+$primary-font-size = 18px
+$primary-font-line-height = 24px
+$primary-font-light = 300
+$primary-font-normal = 400
+$primary-font-semibold = 600
+$primary-font-bold = 700
+
+primary-font(w)
+  font-family: $primary-font, $performance-font
+  font-weight: w
+  line-height: $primary-font-line-height

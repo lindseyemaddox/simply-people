@@ -189,34 +189,13 @@ svg:not(root) {
   content: "";
   clear: both;
 }
-.light {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-.regular {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-}
-.bold {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-}
-.black {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-}
 border-radius (n) {
-  -webkit-border-radius: n;
-  -moz-border-radius: n;
   border-radius: n;
 }
 transition (prop,
 time,
 ease) {
   -webkit-transition: prop time ease;
-  -moz-transition: prop time ease;
-  -o-transition: prop time ease;
-  -ms-transition: prop time ease;
   transition: prop time ease;
 }
 gradient (origin,
@@ -224,9 +203,6 @@ start,
 stop) {
   background-color: start;
   background-image: -webkit-linear-gradient(origin, start, stop);
-  background-image: -moz-linear-gradient(origin, start, stop);
-  background-image: -o-linear-gradient(origin, start, stop);
-  background-image: -ms-linear-gradient(origin, start, stop);
   background-image: linear-gradient(origin, start, stop);
 }
 drop-shadow (inset,
@@ -235,8 +211,6 @@ y,
 blur,
 spread,
 alpha) {
-  -webkit-box-shadow: inset x y blur spread alpha;
-  -moz-box-shadow: inset x y blur spread alpha;
   box-shadow: inset x y blur spread alpha;
 }
 opacity (opacity) {
@@ -294,7 +268,6 @@ z) {
 }
 perspective (value) {
   -webkit-perspective: value;
-  -moz-perspective: value;
   -ms-perspective: value;
   perspective: value;
 }
@@ -311,31 +284,154 @@ html {
 h1 {
   font-size: 20px;
 }
+.video-overlay {
+  background: rgba(43,43,43,0.8);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+video {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 120%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background: url("/_images/puzzle-large.jpg") no-repeat;
+  background-size: cover;
+}
 footer {
   margin: 0 auto;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  z-index: 1;
 }
-#id .class {
-  margin-left: 5px;
+footer h1 {
+  color: #fff;
+  font-size: 0.7em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+aside {
+  padding: 15% 0 0 10%;
+}
+aside img {
+  width: 80%;
+  margin-bottom: 46px;
+}
+aside h2 {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 100px;
+}
+aside .connect {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+aside .connect h3 {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #05c7f2;
+  font-size: 1.3em;
+  margin-bottom: 18px;
+}
+aside .connect .phone .type {
+  float: left;
+  width: 25%;
+}
+aside .connect .phone .type p {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+aside .connect .phone .number {
+  float: right;
+  width: 75%;
+}
+aside .connect .phone .number a {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+aside .linkedin {
+  display: inline-block;
+  vertical-align: top;
+  width: 29%;
+}
+aside .linkedin div a {
+  display: block;
+}
+aside .linkedin div a img {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10%;
+}
+aside .linkedin div a span {
+  width: 65%;
+  margin-left: 9%;
+  display: inline-block;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: $primary-font-bold-normal;
+  line-height: 24px;
+  font-size: 0.8em;
+  line-height: 1em;
+  vertical-align: top;
+  color: #fff;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-size: 1rem;
 }
 .wrapper {
   display: table;
   height: 100%;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 .main {
   display: table-row;
   height: 100%;
 }
-aside {
+.main aside {
   display: table-cell;
-  min-width: 340px;
-  width: 340px;
-  background-color: #ffc0cb;
+  min-width: 800px;
+  width: 800px;
+  background-color: transparent;
 }
-section {
+.main section {
   display: table-cell;
   width: 100%;
-  background-color: #008000;
+  background-color: transparent;
 }
 .grid {
   max-width: 1000px;
@@ -344,5 +440,13 @@ section {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 15.5px;
+  }
+}
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url("/_images/puzzle-large.jpg") #2b2b2b no-repeat center center fixed;
+  }
+  .bg-vid {
+    display: none;
   }
 }
