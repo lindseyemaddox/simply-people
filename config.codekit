@@ -35,35 +35,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_images\/icon-linkedin-2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2691,
-		"inputAbbreviatedPath": "\/_images\/icon-linkedin-2x.png",
-		"outputAbbreviatedPath": "\/_images\/icon-linkedin-2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_images\/icon-linkedin.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1869,
-		"inputAbbreviatedPath": "\/_images\/icon-linkedin.png",
-		"outputAbbreviatedPath": "\/_images\/icon-linkedin.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_images\/puzzle-large.jpg": {
+	"\/_images\/puzzle-overlay-medium.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 77780,
-		"inputAbbreviatedPath": "\/_images\/puzzle-large.jpg",
-		"outputAbbreviatedPath": "\/_images\/puzzle-large.jpg",
+		"initialSize": 10106,
+		"inputAbbreviatedPath": "\/_images\/puzzle-overlay-medium.jpg",
+		"outputAbbreviatedPath": "\/_images\/puzzle-overlay-medium.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_images\/puzzle-overlay-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3795,
+		"inputAbbreviatedPath": "\/_images\/puzzle-overlay-small.jpg",
+		"outputAbbreviatedPath": "\/_images\/puzzle-overlay-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_images\/puzzle-overlay.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30858,
+		"inputAbbreviatedPath": "\/_images\/puzzle-overlay.jpg",
+		"outputAbbreviatedPath": "\/_images\/puzzle-overlay.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -134,6 +134,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_scripts\/picturefill.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_scripts\/picturefill.js",
+		"outputAbbreviatedPath": "\/_scripts\/min\/picturefill-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_styles\/compiled.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -168,6 +179,22 @@
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/_styles\/styl\/atoms\/fonts.styl",
 		"outputAbbreviatedPath": "\/_styles\/styl\/css\/fonts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"\/_styles\/styl\/global\/picturefill.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/_styles\/styl\/global\/picturefill.styl",
+		"outputAbbreviatedPath": "\/_styles\/styles.css\/picturefill.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -302,6 +329,15 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,

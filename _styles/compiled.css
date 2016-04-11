@@ -189,6 +189,35 @@ svg:not(root) {
   content: "";
   clear: both;
 }
+@media (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1000px) and (min-resolution: 192dpi) {
+  html {
+    background-image: url("/_images/puzzle-overlay.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+}
+@media (max-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.9895833333333333), (max-width: 1000px) and (max-resolution: 191dpi) {
+  html {
+    background-image: url("/_images/puzzle-overlay.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 500px) and (min-resolution: 192dpi) {
+  html {
+    background-image: url("/_images/puzzle-overlay-medium.jpg");
+  }
+}
+@media (max-width: 500px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 500px) and (-webkit-max-device-pixel-ratio: 1.9895833333333333), (max-width: 500px) and (max-resolution: 191dpi) {
+  html {
+    background-image: url("/_images/puzzle-overlay-small.jpg");
+  }
+}
+@media (max-width: 250px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 250px) and (min-resolution: 192dpi) {
+  html {
+    background-image: url("/_images/puzzle-overlay-small.jpg");
+  }
+}
 html {
   font-size: $primary-font-size;
 }
@@ -339,7 +368,7 @@ footer h1 {
   font-size: 0.7em;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.5em;
   text-align: right;
   margin-right: 30px;
 }
@@ -379,7 +408,7 @@ aside > span {
 aside h2 {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.5em;
   color: #fff;
   font-size: 1em;
   margin-bottom: 100px;
@@ -392,7 +421,7 @@ aside .connect {
 aside .connect h3 {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5em;
   text-transform: uppercase;
   color: #05c7f2;
   font-size: 1.3em;
@@ -405,10 +434,10 @@ aside .connect .phone .type {
 aside .connect .phone .type p {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.5em;
   font-size: 1.3em;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 aside .connect .phone .number {
   float: right;
@@ -417,12 +446,12 @@ aside .connect .phone .number {
 aside .connect .phone .number a {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5em;
   font-size: 1.3em;
   color: #fff;
   text-decoration: none;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   -webkit-transition: color 400ms ease;
   transition: color 400ms ease;
 }
@@ -431,8 +460,8 @@ aside .connect .phone .number a:hover {
 }
 aside .linkedin {
   float: right;
-  vertical-align: top;
-  width: 35%;
+  margin-top: 8px;
+  width: 37%;
 }
 aside .linkedin div a {
   display: block;
@@ -449,7 +478,7 @@ aside .linkedin div a span.name {
   display: inline-block;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: $primary-font-bold-normal;
-  line-height: 24px;
+  line-height: 1.5em;
   font-size: 0.9em;
   line-height: 1.4em;
   vertical-align: middle;
@@ -460,16 +489,84 @@ aside .linkedin div a span.name span {
   white-space: nowrap;
   font-size: 1em;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
   html {
-    font-size: 15.5px;
+    font-size: 15px;
   }
 }
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 600px) {
   html {
-    background: url("/_images/puzzle-large.jpg") #2b2b2b no-repeat center center fixed;
+    font-size: 14px;
   }
-  .bg-vid {
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main aside {
+    min-width: 540px;
+    width: 540px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main aside {
+    min-width: 460px;
+    width: 460px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main aside {
+    min-width: 90%;
+    width: 90%;
+  }
+}
+@media screen and (max-device-width: 1000px) {
+  .bg-vid,
+  .video-overlay {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  aside .linkedin {
+    width: 41%;
+  }
+  aside > span {
+    font-size: 7em;
+    margin-bottom: 26px;
+  }
+}
+@media screen and (max-width: 500px) {
+  aside > span {
+    font-size: 5em;
+  }
+  aside h2 {
+    margin-bottom: 60px;
+  }
+  aside .connect,
+  aside .linkedin {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+  aside .connect .phone .type {
+    width: 19%;
+  }
+  aside .connect .phone .number {
+    float: left;
+  }
+  aside .linkedin div a span.name span {
+    display: block;
+  }
+  aside .linkedin div a span.name {
+    margin-left: 6%;
+  }
+  footer {
+    width: 45%;
+    right: 0;
+  }
+  footer h1 {
+    line-height: 1.2em;
   }
 }

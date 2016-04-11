@@ -1,9 +1,56 @@
-html
-  @media screen and (max-width: 1200px)
-    font-size: 15.5px
 
-@media screen and (max-device-width: 800px)
-  html
-    background: url(/_images/puzzle-large.jpg) $black no-repeat center center fixed
-  .bg-vid
+html
+  @media screen and (max-width: 700px)
+    font-size: 15px
+  @media screen and (max-width: 600px)
+    font-size: 14px
+  @media screen and (max-width: 500px)
+    font-size: 13px
+
+
+.main aside
+	@media screen and (max-width: 700px)
+		min-width: 540px
+		width: 540px
+	@media screen and (max-width: 600px)
+		min-width: 460px
+		width: 460px
+	@media screen and (max-width: 500px)
+		min-width: 90%
+		width: 90%
+
+
+@media screen and (max-device-width: 1000px)
+  .bg-vid, .video-overlay
     display: none
+
+
+@media screen and (max-width: 600px)
+	aside .linkedin
+		width: 41%
+	aside > span
+		font-size: 7em
+		margin-bottom: 26px
+
+@media screen and (max-width: 500px)
+	aside > span
+		font-size: 5em
+	aside h2
+		margin-bottom: 60px
+	aside .connect, aside .linkedin
+		width: 100%
+		float: none
+		margin-bottom: 30px
+	aside .connect .phone .type
+		width: 19%
+	aside .connect .phone .number
+		float: left
+	aside .linkedin div a span.name span
+		display: block
+	aside .linkedin div a span.name
+		margin-left: 6%
+	footer
+		width: 45%
+		right: 0
+		h1
+			line-height: 1.2em
