@@ -196,7 +196,7 @@ svg:not(root) {
     height: 100%;
   }
 }
-@media (max-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.9895833333333333), (max-width: 1000px) and (max-resolution: 191dpi) {
+@media (max-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 1000px) and (max-resolution: 191dpi) {
   html {
     background-image: url("/_images/puzzle-overlay.jpg");
     background-size: cover;
@@ -208,7 +208,7 @@ svg:not(root) {
     background-image: url("/_images/puzzle-overlay-medium.jpg");
   }
 }
-@media (max-width: 500px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 500px) and (-webkit-max-device-pixel-ratio: 1.9895833333333333), (max-width: 500px) and (max-resolution: 191dpi) {
+@media (max-width: 500px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 500px) and (max-resolution: 191dpi) {
   html {
     background-image: url("/_images/puzzle-overlay-small.jpg");
   }
@@ -237,8 +237,8 @@ body {
 }
 .main aside {
   display: table-cell;
-  min-width: 610px;
-  width: 610px;
+  min-width: 700px;
+  width: 700px;
   background-color: transparent;
 }
 .main section {
@@ -392,8 +392,7 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   background: url("/_images/puzzle-large.jpg") no-repeat;
   background-size: cover;
 }
@@ -452,7 +451,6 @@ aside .connect .phone .number a {
   text-decoration: none;
   display: block;
   margin-bottom: 3px;
-  -webkit-transition: color 400ms ease;
   transition: color 400ms ease;
 }
 aside .connect .phone .number a:hover {
@@ -473,8 +471,7 @@ aside .linkedin div a span.icon-linkedin-white {
   margin-bottom: 20px;
 }
 aside .linkedin div a span.name {
-  width: 65%;
-  margin-left: 9%;
+  margin-left: 8%;
   display: inline-block;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: $primary-font-bold-normal;
@@ -485,6 +482,7 @@ aside .linkedin div a span.name {
   color: #fff;
 }
 aside .linkedin div a span.name span {
+  display: block;
   margin-left: 0;
   white-space: nowrap;
   font-size: 1em;
@@ -502,6 +500,12 @@ aside .linkedin div a span.name span {
 @media screen and (max-width: 500px) {
   html {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .main aside {
+    min-width: 610px;
+    width: 610px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -555,9 +559,6 @@ aside .linkedin div a span.name span {
   }
   aside .connect .phone .number {
     float: left;
-  }
-  aside .linkedin div a span.name span {
-    display: block;
   }
   aside .linkedin div a span.name {
     margin-left: 6%;
