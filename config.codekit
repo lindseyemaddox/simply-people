@@ -200,6 +200,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_images\/icons\/favicon-194x194.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1646,
+		"inputAbbreviatedPath": "\/_images\/icons\/favicon-194x194.png",
+		"outputAbbreviatedPath": "\/_images\/icons\/favicon-194x194.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_images\/icons\/favicon-32x32.png": {
 		"fileType": 32768,
 		"ignore": 0,
