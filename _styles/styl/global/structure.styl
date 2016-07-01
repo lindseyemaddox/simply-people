@@ -1,27 +1,90 @@
 
-html
-  font-size: $primary-font-size
-body
-  font-size: 1rem
+$icon-width = 16px
+$sidebar-collapsed-width = 100px
+$sidebar-width = 280px
+$layout-max-width = 1000px
 
 .wrapper
-  display: table
-  height: 100%
-  position: relative
-  width: 100%
-  z-index: 1
-.main
-  display: table-row
-  height: 100%
-  aside
-    display: table-cell
-    min-width: 700px
-    width: 700px
-    background-color: transparent
-  section
-    display: table-cell
-    width: 100%
-    background-color: transparent
-.grid
-  max-width: 1000px
+  max-width: $layout-max-width
   margin: 0 auto
+
+.layout
+  margin-right: $sidebar-collapsed-width
+  position: relative
+
+  .main
+    background-color: $black
+    width: 100%
+    z-index: 0
+
+    .grid
+      background-color: $white
+      margin: 0 auto
+      max-width: 850px
+      padding: 111px 75px 150px
+
+  .icon
+    color: $primary
+    font-size: 0.8em
+    min-width: $icon-width
+    padding-right: $icon-width * 1.5
+    text-align: center
+
+  .sidebar
+    background-color: $black
+    bottom: 0
+    right: -($sidebar-collapsed-width)
+    padding: $sidebar-vertical-padding 0
+    position: absolute
+    top: 0
+    transition: right 300ms ease-in
+    width: $sidebar-collapsed-width
+    z-index: 1
+
+  &--collapsed
+    animation: layout-slide 400ms 100ms forwards
+
+footer
+  background-color: $black
+  height: 435px
+  position: relative
+
+@keyframes rotate-toggle
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(-180deg)
+
+@keyframes icon-grow
+  0%
+    transform: scale(0)
+  50%
+    transform: scale(1.5)
+  100%
+    transform: scale(1)
+
+@keyframes hover-width
+  0%
+    width: 0px
+  80%
+    width: 220px
+  100%
+    width: 200px
+
+@keyframes link-opacity
+  0%
+    opacity: 0
+  80%
+    opacity: 0
+  90%
+    opacity: 30%
+  100%
+    opacity: 100%
+
+@keyframes layout-slide
+  0%
+    margin-left: $sidebar-width
+  30%
+    margin-left: $sidebar-width + $sidebar-collapsed-width
+  100%
+    margin-left: 0

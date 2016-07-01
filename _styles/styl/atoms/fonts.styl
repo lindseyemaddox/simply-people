@@ -3,10 +3,10 @@ $primary-font = 'Source Sans Pro'
 $performance-font = 'Helvetica', 'Arial', sans-serif
 $primary-font-size = 16px
 $primary-font-line-height = 1.5em
-$primary-font-light = 300
-$primary-font-normal = 400
-$primary-font-semibold = 600
-$primary-font-bold = 700
+$light = 300
+$normal = 400
+$semibold = 600
+$bold = 700
 
 primary-font(w)
   font-family: $primary-font, $performance-font
@@ -19,8 +19,8 @@ html
 
 @font-face
 	font-family: 'icomoon'
-	src: url('/_fonts/icomoon.eot?ebz9au')
-	src: url('/_fonts/icomoon.eot?ebz9au#iefix') format('embedded-opentype'), url('/_fonts/icomoon.ttf?ebz9au') format('truetype'), url('/_fonts/icomoon.woff?ebz9au') format('woff'), url('/_fonts/icomoon.svg?ebz9au#icomoon') format('svg')
+	src: url('../_fonts/icomoon.eot?ebz9au')
+	src: url('../_fonts/icomoon.eot?ebz9au#iefix') format('embedded-opentype'), url('../_fonts/icomoon.ttf?ebz9au') format('truetype'), url('../_fonts/icomoon.woff?ebz9au') format('woff'), url('../_fonts/icomoon.svg?ebz9au#icomoon') format('svg')
 	font-weight: normal
 	font-style: normal
 
@@ -35,7 +35,7 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-.icon-linkedin-white 
+.icon-linkedin-white
 	.path1:before
     content: "\e900"
     color: rgba($white, 1)
