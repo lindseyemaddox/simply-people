@@ -1,7 +1,8 @@
 
-$icon-width = 16px
+$icon-width = 24px
 $sidebar-collapsed-width = 75px
 $sidebar-width = 280px
+$sidebar-vertical-padding = 45px
 $layout-max-width = 1000px
 
 .wrapper
@@ -21,13 +22,6 @@ $layout-max-width = 1000px
       margin: 0 auto
       padding: 111px 75px 150px
 
-  .icon
-    color: $primary
-    font-size: 0.8em
-    min-width: $icon-width
-    padding-right: $icon-width * 1.5
-    text-align: center
-
   .sidebar
     background-color: $white-alt
     bottom: 0
@@ -38,9 +32,17 @@ $layout-max-width = 1000px
     transition: right 300ms ease-in
     width: $sidebar-collapsed-width
     z-index: 1
+    box-shadow: -5px 0 15px 0 rgba($black 0.1)
 
   &--collapsed
     animation: layout-slide 400ms 100ms forwards
+
+  .icon-hamburger
+    color: $black
+    font-size: 1.5em
+    min-width: $icon-width
+    text-align: center
+    display: block
 
 @keyframes rotate-toggle
   0%

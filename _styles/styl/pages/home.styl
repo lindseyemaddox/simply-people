@@ -1,143 +1,143 @@
 
-border-radius(n)
-  border-radius n
+// border-radius(n)
+//   border-radius n
 
-aside
-  > span
-    font-size: 9em
-    margin-bottom: 46px
-    display: block
-  h2
-    primary-font($primary-font-light)
-    color: $white
-    font-size: 1em
-    margin-bottom: 100px
-  .connect, .input
-    float: left
-    vertical-align: top
-    width: 59%
-    h3
-      primary-font($primary-font-bold)
-      text-transform: uppercase
-      color: $primary
-      font-size: 1.3em
-      margin-bottom: 18px
-    .phone
-      .type
-        float: left
-        width: 39%
-        p
-          primary-font($primary-font-light)
-          font-size: 1.3em
-          color: $white
-          margin-bottom: 3px
-      .number
-        float: right
-        width: 61%
-        a
-          primary-font($primary-font-semibold)
-          font-size: 1.3em
-          color: $white
-          text-decoration: none
-          display: block
-          margin-bottom: 3px
-          transition: color 400ms ease
-          &:hover
-            color: $primary
-  .linkedin, input#mc-embedded-subscribe
-    float: right
-    margin-top: 8px
-    width: 37%
-    div
-      a
-        display: block
-        span.icon-linkedin-white
-          font-size: 2.5em
-          display: inline-block
-          vertical-align: top
-          margin-bottom: 20px
-        span.name
-          margin-left: 8%
-          display: inline-block
-          primary-font($primary-font-bold-normal)
-          font-size: .9em
-          line-height: 1.4em
-          vertical-align: middle
-          color: $white
-          span
-            display: block
-            margin-left: 0
-            white-space: nowrap
-            font-size: 1em
-  #mc_embed_signup_scroll
-    margin-top: 20px
-    -webkit-appearance: none;
-    input#mc-embedded-subscribe
-      max-width: 132px
-      border: none
-      border-radius(4px)
-      float: left
-      margin-left: 4%
-      height: 40px
-      margin-top: 0
-      outline: none
-      background-color: $primary
-      primary-font($primary-font-bold)
-      color: $white
-      font-size: 1.2em
-      text-transform: uppercase
-      transition: color 200ms ease
-      &::-moz-focus-inner
-        border: 0
-      &:hover, &:focus
-        color: rgba($white, 0.8)
-        box-shadow: 1px 1px 10px $black
-    label
-      primary-font($primary-font-light)
-      font-size: 1em
-    input#mce-EMAIL, .floating-placeholder
-      border: none
-      border-radius(4px)
-      outline: none
-      font-size: 1em
-      height: 40px
-      margin: 0
-      padding: 0
-      -webkit-font-smoothing: antialiased
-    .floating-placeholder
-      position: relative
-      width: 90%
-      background-color: #fff
-      input#mce-EMAIL
-        font-size: 1em
-        border: none
-        outline: none
-        background-color: transparent
-        z-index: 2
-        text-indent: 1em
-        width: 100%
-        &:focus + label
-          color: $primary
-          font-size: 0.6em
-          top: -20px
-          left: 5px
-        &:valid + label
-          z-index: -1
-      label
-        color: $black
-        cursor: text
-        display: block
-        position: absolute
-        top: 1em
-        left: 1em
-        font-size: 0.7em
-        z-index: 1
-        transition: all 200ms ease
-      &&-float
-        input#mce-EMAIL
-          line-height: 3.4em
-        label
-          transform: scale(0.55, 0.55) rotateY(0)
+// aside
+//   > span
+//     font-size: 9em
+//     margin-bottom: 46px
+//     display: block
+//   h2
+//     primary-font($primary-font-light)
+//     color: $white
+//     font-size: 1em
+//     margin-bottom: 100px
+//   .connect, .input
+//     float: left
+//     vertical-align: top
+//     width: 59%
+//     h3
+//       primary-font($primary-font-bold)
+//       text-transform: uppercase
+//       color: $primary
+//       font-size: 1.3em
+//       margin-bottom: 18px
+//     .phone
+//       .type
+//         float: left
+//         width: 39%
+//         p
+//           primary-font($primary-font-light)
+//           font-size: 1.3em
+//           color: $white
+//           margin-bottom: 3px
+//       .number
+//         float: right
+//         width: 61%
+//         a
+//           primary-font($primary-font-semibold)
+//           font-size: 1.3em
+//           color: $white
+//           text-decoration: none
+//           display: block
+//           margin-bottom: 3px
+//           transition: color 400ms ease
+//           &:hover
+//             color: $primary
+//   .linkedin, input#mc-embedded-subscribe
+//     float: right
+//     margin-top: 8px
+//     width: 37%
+//     div
+//       a
+//         display: block
+//         span.icon-linkedin-white
+//           font-size: 2.5em
+//           display: inline-block
+//           vertical-align: top
+//           margin-bottom: 20px
+//         span.name
+//           margin-left: 8%
+//           display: inline-block
+//           primary-font($primary-font-bold-normal)
+//           font-size: .9em
+//           line-height: 1.4em
+//           vertical-align: middle
+//           color: $white
+//           span
+//             display: block
+//             margin-left: 0
+//             white-space: nowrap
+//             font-size: 1em
+//   #mc_embed_signup_scroll
+//     margin-top: 20px
+//     -webkit-appearance: none;
+//     input#mc-embedded-subscribe
+//       max-width: 132px
+//       border: none
+//       border-radius(4px)
+//       float: left
+//       margin-left: 4%
+//       height: 40px
+//       margin-top: 0
+//       outline: none
+//       background-color: $primary
+//       primary-font($primary-font-bold)
+//       color: $white
+//       font-size: 1.2em
+//       text-transform: uppercase
+//       transition: color 200ms ease
+//       &::-moz-focus-inner
+//         border: 0
+//       &:hover, &:focus
+//         color: rgba($white, 0.8)
+//         box-shadow: 1px 1px 10px $black
+//     label
+//       primary-font($primary-font-light)
+//       font-size: 1em
+//     input#mce-EMAIL, .floating-placeholder
+//       border: none
+//       border-radius(4px)
+//       outline: none
+//       font-size: 1em
+//       height: 40px
+//       margin: 0
+//       padding: 0
+//       -webkit-font-smoothing: antialiased
+//     .floating-placeholder
+//       position: relative
+//       width: 90%
+//       background-color: #fff
+//       input#mce-EMAIL
+//         font-size: 1em
+//         border: none
+//         outline: none
+//         background-color: transparent
+//         z-index: 2
+//         text-indent: 1em
+//         width: 100%
+//         &:focus + label
+//           color: $primary
+//           font-size: 0.6em
+//           top: -20px
+//           left: 5px
+//         &:valid + label
+//           z-index: -1
+//       label
+//         color: $black
+//         cursor: text
+//         display: block
+//         position: absolute
+//         top: 1em
+//         left: 1em
+//         font-size: 0.7em
+//         z-index: 1
+//         transition: all 200ms ease
+//       &&-float
+//         input#mce-EMAIL
+//           line-height: 3.4em
+//         label
+//           transform: scale(0.55, 0.55) rotateY(0)
 
 
 
