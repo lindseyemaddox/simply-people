@@ -593,13 +593,6 @@ html {
 .layout--collapsed {
   animation: layout-slide 400ms 100ms forwards;
 }
-.layout .icon-hamburger {
-  color: #2b2b2b;
-  font-size: 1.5em;
-  min-width: 24px;
-  text-align: center;
-  display: block;
-}
 @-moz-keyframes rotate-toggle {
   0% {
     transform: rotate(0deg);
@@ -820,12 +813,6 @@ html {
     margin-left: 0;
   }
 }
-body {
-  font-family: sans-serif;
-  background: #f1f1f1;
-  padding: 0;
-  margin: 0;
-}
 .nav-pane {
   transition: 250ms;
   position: fixed;
@@ -851,10 +838,12 @@ body {
   transform: translateX(-425px);
   transition: 250ms;
 }
-.toggle-nav.open span.m,
-.toggle-nav.open span.n,
-.toggle-nav.open span.u {
-  opacity: 1;
+.toggle-nav {
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: $primary-font-light;
+  line-height: 1.5em;
 }
 .toggle-nav span.m,
 .toggle-nav span.n,
@@ -890,12 +879,12 @@ body {
   display: block;
   background: #212121;
   border-radius: 1px;
-  border-bottom: 1px solid #595959;
+  border-bottom: 1.8px solid #606060;
   width: 15px;
   height: 1px;
 }
 .toggle-nav span.e span.bar:nth-child(2) {
-  margin: 3px 0;
+  margin: 3.6px 0;
 }
 .toggle-nav:hover span.m,
 .toggle-nav:hover span.n,
