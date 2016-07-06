@@ -1,6 +1,6 @@
 
 $icon-width = 16px
-$sidebar-collapsed-width = 100px
+$sidebar-collapsed-width = 75px
 $sidebar-width = 280px
 $layout-max-width = 1000px
 
@@ -13,14 +13,12 @@ $layout-max-width = 1000px
   position: relative
 
   .main
-    background-color: $black
+    background-color: rgba($white-alt 0.67)
     width: 100%
     z-index: 0
 
     .grid
-      background-color: $white
       margin: 0 auto
-      max-width: 850px
       padding: 111px 75px 150px
 
   .icon
@@ -31,7 +29,7 @@ $layout-max-width = 1000px
     text-align: center
 
   .sidebar
-    background-color: $black
+    background-color: $white-alt
     bottom: 0
     right: -($sidebar-collapsed-width)
     padding: $sidebar-vertical-padding 0
@@ -43,11 +41,6 @@ $layout-max-width = 1000px
 
   &--collapsed
     animation: layout-slide 400ms 100ms forwards
-
-footer
-  background-color: $black
-  height: 435px
-  position: relative
 
 @keyframes rotate-toggle
   0%
