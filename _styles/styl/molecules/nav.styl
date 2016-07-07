@@ -2,16 +2,15 @@
 .nav-pane
   transition: 250ms
   position: fixed
-  transform: translateX(75px)
+  transform: translateX(0px)
   top: 0
   height: 100vh
-  width: 348px
-  background: #EA5548
-  border-right: 2px solid darken(#EA5548, 2%)
+  width: 75px
+  background: $white-alt
   display: flex
   flex-direction: column
   justify-content: space-around
-  box-shadow: 0px 3px 10px rgba(#212121, 0.5)
+  box-shadow: 0px 3px 10px rgba($black, 0.5)
 
   h1
     margin: 0
@@ -28,6 +27,7 @@
   cursor: pointer
   text-align: center
   primary-font($primary-font-light)
+  position: absolute
 
   &.open
     // span.m, span.n, span.u
@@ -76,3 +76,7 @@
   span.m, span.n, span.u
     opacity: 1
     transition: 250ms
+    color: $primary
+  span.e span.bar
+    background-color: $primary
+    border-bottom-color: $primary

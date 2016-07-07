@@ -585,10 +585,7 @@ html {
   padding: 45px 0;
   position: absolute;
   top: 0;
-  transition: right 300ms ease-in;
   width: 75px;
-  z-index: 1;
-  box-shadow: -5px 0 15px 0 rgba(43,43,43,0.1);
 }
 .layout--collapsed {
   animation: layout-slide 400ms 100ms forwards;
@@ -816,16 +813,15 @@ html {
 .nav-pane {
   transition: 250ms;
   position: fixed;
-  transform: translateX(75px);
+  transform: translateX(0px);
   top: 0;
   height: 100vh;
-  width: 348px;
-  background: #ea5548;
-  border-right: 2px solid #e95043;
+  width: 75px;
+  background: #d3cbbd;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 0px 3px 10px rgba(33,33,33,0.5);
+  box-shadow: 0px 3px 10px rgba(43,43,43,0.5);
 }
 .nav-pane h1 {
   margin: 0;
@@ -844,6 +840,7 @@ html {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: $primary-font-light;
   line-height: 1.5em;
+  position: absolute;
 }
 .toggle-nav span.m,
 .toggle-nav span.n,
@@ -891,6 +888,11 @@ html {
 .toggle-nav:hover span.u {
   opacity: 1;
   transition: 250ms;
+  color: #37b879;
+}
+.toggle-nav:hover span.e span.bar {
+  background-color: #37b879;
+  border-bottom-color: #37b879;
 }
 .background-overlay {
   bottom: 0;
