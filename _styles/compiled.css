@@ -579,7 +579,6 @@ html {
   padding: 111px 75px 150px;
 }
 .layout .sidebar {
-  background-color: #d3cbbd;
   bottom: 0;
   right: -75px;
   padding: 45px 0;
@@ -821,7 +820,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 0px 3px 10px rgba(43,43,43,0.5);
+  box-shadow: 0px 3px 10px rgba(43,43,43,0.2);
 }
 .nav-pane h1 {
   margin: 0;
@@ -833,6 +832,7 @@ html {
 .nav-pane.open {
   transform: translateX(-425px);
   transition: 250ms;
+  width: 500px;
 }
 .toggle-nav {
   cursor: pointer;
@@ -841,6 +841,7 @@ html {
   font-weight: $primary-font-light;
   line-height: 1.5em;
   position: absolute;
+  width: 100%;
 }
 .toggle-nav span.m,
 .toggle-nav span.n,
@@ -850,16 +851,19 @@ html {
   opacity: 0;
   transition: 250ms;
   letter-spacing: 2px;
+  vertical-align: middle;
 }
 .toggle-nav span.e {
   display: inline-block;
-  height: 12px;
-  width: 17px;
+  height: 14px;
+  width: 20px;
+  vertical-align: middle;
+  margin: 0 3px 0 2px;
 }
 .toggle-nav span.e.btn-close span.bar:nth-child(1) {
   transition: 250ms;
   transform: rotate(45deg);
-  top: 5px;
+  top: 6px;
 }
 .toggle-nav span.e.btn-close span.bar:nth-child(2) {
   opacity: 0;
@@ -868,7 +872,7 @@ html {
 .toggle-nav span.e.btn-close span.bar:nth-child(3) {
   transition: 250ms;
   transform: rotate(-45deg);
-  bottom: 5px;
+  bottom: 6px;
 }
 .toggle-nav span.e span.bar {
   transition: 250ms;
@@ -877,8 +881,8 @@ html {
   background: #212121;
   border-radius: 1px;
   border-bottom: 1.8px solid #606060;
-  width: 15px;
-  height: 1px;
+  width: 20px;
+  height: 2.5px;
 }
 .toggle-nav span.e span.bar:nth-child(2) {
   margin: 3.6px 0;
