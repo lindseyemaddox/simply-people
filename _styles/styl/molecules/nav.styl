@@ -5,40 +5,75 @@ nav-icon-view()
       span
         opacity: 0
         display: block
-      &.sub
-        opacity: 0
-        height: 0
+
+    .sub
+      opacity: 0
+      height: 0
 
 nav-list-view()
   .nav-items
+    margin-left: 34px
     a
       text-align: left
+
       span
         opacity: 1
         display: inline
 
-    [class^="list"] input:checked ~ a.sub
+    [class^="list"] input:checked ~ .sub
       opacity: 1
       height: auto
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 27px
 
 
 .nav-items
-  margin-top: 111px
+  margin: 111px auto 0
+  letter-spacing: 4px
+
+  .sub.phones
+    a
+      font-size: 1em
+      text-decoration: none
+      color: $black
+      primary-font($light)
+      span
+        margin-right: 10px
+
   a
-    margin: 0 auto 27px
     display: block
     text-align: center
     font-size: 3.5em
+
+    &:not(.sub)
+      margin-bottom: 10px
+      position: relative
+
+      span
+        position: absolute
+        top: 1em
+        left: 80px
+
     &:before
       vertical-align: middle
+
     span
-      font-size: 0.4em
+      font-size: 0.35em
       vertical-align: middle
       height: 0
+      padding-left: 0.35em
+      text-transform: uppercase
+      primary-font($light)
+
     &.sub
       font-size: 2em
-      margin-left: 1em
+      margin-left: 0.65em
       cursor: pointer
+
+      span
+        padding-left: 2.25em
+        font-size: .475em
 
 [class^="list"]
   position: relative
@@ -53,6 +88,7 @@ nav-list-view()
     height: 4.5em
     position: absolute
     cursor: pointer
+    z-index: 1
 
 .nav-pane
   transition: 250ms
@@ -120,12 +156,12 @@ nav-list-view()
       &:nth-child(2)
         margin: 3.6px 0
 
-.toggle-nav:hover
-  span.m, span.n, span.u
-    opacity: 1
-    transition: 250ms
-    color: $primary
-  span.e span.bar
-    background-color: $primary
-    border-bottom-color: $primary
+  &:hover
+    span.m, span.n, span.u
+      opacity: 1
+      transition: 250ms
+      color: $primary
+    span.e span.bar
+      background-color: $primary
+      border-bottom-color: $primary
 

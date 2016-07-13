@@ -450,6 +450,8 @@ html {
 }
 .icon-connect:before {
   content: "\e90e";
+  font-size: 0.75em;
+  margin-left: 0.2em;
 }
 .icon-desk:before {
   content: "\e90f";
@@ -809,26 +811,55 @@ html {
   }
 }
 .nav-items {
-  margin-top: 111px;
+  margin: 111px auto 0;
+  letter-spacing: 4px;
+}
+.nav-items .sub.phones a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.nav-items .sub.phones a span {
+  margin-right: 10px;
 }
 .nav-items a {
-  margin: 0 auto 27px;
   display: block;
   text-align: center;
   font-size: 3.5em;
+}
+.nav-items a:not(.sub) {
+  margin-bottom: 10px;
+  position: relative;
+}
+.nav-items a:not(.sub) span {
+  position: absolute;
+  top: 1em;
+  left: 80px;
 }
 .nav-items a:before {
   vertical-align: middle;
 }
 .nav-items a span {
-  font-size: 0.4em;
+  font-size: 0.35em;
   vertical-align: middle;
   height: 0;
+  padding-left: 0.35em;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 .nav-items a.sub {
   font-size: 2em;
-  margin-left: 1em;
+  margin-left: 0.65em;
   cursor: pointer;
+}
+.nav-items a.sub span {
+  padding-left: 2.25em;
+  font-size: 0.475em;
 }
 [class^="list"] {
   position: relative;
@@ -843,6 +874,7 @@ html {
   height: 4.5em;
   position: absolute;
   cursor: pointer;
+  z-index: 1;
 }
 .nav-pane {
   transition: 250ms;
@@ -858,7 +890,7 @@ html {
   opacity: 0;
   display: block;
 }
-.nav-pane .nav-items a.sub {
+.nav-pane .nav-items .sub {
   opacity: 0;
   height: 0;
 }
@@ -867,6 +899,9 @@ html {
   transition: 250ms;
   width: 500px;
 }
+.nav-pane.open .nav-items {
+  margin-left: 34px;
+}
 .nav-pane.open .nav-items a {
   text-align: left;
 }
@@ -874,9 +909,13 @@ html {
   opacity: 1;
   display: inline;
 }
-.nav-pane.open .nav-items [class^="list"] input:checked ~ a.sub {
+.nav-pane.open .nav-items [class^="list"] input:checked ~ .sub {
   opacity: 1;
   height: auto;
+  margin-bottom: 10px;
+}
+.nav-pane.open .nav-items [class^="list"] input:checked ~ .sub:last-child {
+  margin-bottom: 27px;
 }
 .toggle-nav {
   cursor: pointer;
