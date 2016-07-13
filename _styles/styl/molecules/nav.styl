@@ -1,4 +1,59 @@
 
+nav-icon-view()
+  .nav-items
+    a
+      span
+        opacity: 0
+        display: block
+      &.sub
+        opacity: 0
+        height: 0
+
+nav-list-view()
+  .nav-items
+    a
+      text-align: left
+      span
+        opacity: 1
+        display: inline
+
+    [class^="list"] input:checked ~ a.sub
+      opacity: 1
+      height: auto
+
+
+.nav-items
+  margin-top: 111px
+  a
+    margin: 0 auto 27px
+    display: block
+    text-align: center
+    font-size: 3.5em
+    &:before
+      vertical-align: middle
+    span
+      font-size: 0.4em
+      vertical-align: middle
+      height: 0
+    &.sub
+      font-size: 2em
+      margin-left: 1em
+      cursor: pointer
+
+[class^="list"]
+  position: relative
+
+  input
+    position: absolute
+    left:-99999px
+    top: -99999px
+
+  label
+    width: 100%
+    height: 4.5em
+    position: absolute
+    cursor: pointer
+
 .nav-pane
   transition: 250ms
   position: fixed
@@ -7,15 +62,14 @@
   height: 100vh
   width: 75px
   background: rgba($white-alt, 0.8)
-  display: flex
-  flex-direction: column
-  justify-content: space-around
   box-shadow: 0px 3px 10px rgba($black, 0.2)
+  nav-icon-view()
 
   &.open
     transform: translateX(-425px)
     transition: 250ms
     width: 500px
+    nav-list-view()
 
 .toggle-nav
   cursor: pointer
@@ -74,3 +128,4 @@
   span.e span.bar
     background-color: $primary
     border-bottom-color: $primary
+
