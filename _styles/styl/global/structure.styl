@@ -2,7 +2,7 @@
 $icon-width = 24px
 $sidebar-collapsed-width = 75px
 $sidebar-width = 280px
-$sidebar-vertical-padding = 45px
+$sidebar-vertical-padding = 35px
 $layout-max-width = 1000px
 
 .wrapper
@@ -10,21 +10,20 @@ $layout-max-width = 1000px
   margin: 0 auto
 
 .layout
-  margin-right: $sidebar-collapsed-width
+  background-color: rgba($white-alt 0.67)
   position: relative
 
   .main
-    background-color: rgba($white-alt 0.67)
     width: 100%
     z-index: 0
 
     .grid
       margin: 0 auto
-      padding: 111px 75px 150px
+      padding: $sidebar-vertical-padding ($sidebar-collapsed-width * 2) 150px $sidebar-collapsed-width
 
   .sidebar
     bottom: 0
-    right: -($sidebar-collapsed-width)
+    right: 0
     padding: $sidebar-vertical-padding 0
     position: absolute
     top: 0

@@ -6,18 +6,11 @@
   top: 0
   height: 100vh
   width: 75px
-  background: $white-alt
+  background: rgba($white-alt, 0.8)
   display: flex
   flex-direction: column
   justify-content: space-around
   box-shadow: 0px 3px 10px rgba($black, 0.2)
-
-  h1
-    margin: 0
-    text-align: center
-    color: #F1F1F1
-    text-transform: uppercase
-    font-size: 1.5rem
 
   &.open
     transform: translateX(-425px)
@@ -30,10 +23,7 @@
   primary-font($primary-font-light)
   position: absolute
   width: 100%
-
-  &.open
-    // span.m, span.n, span.u
-    //   opacity: 1
+  margin-bottom: 50px
 
   span.m, span.n, span.u
     display: inline-block
@@ -51,7 +41,6 @@
     margin: 0 3px 0 2px
 
     &.btn-close
-
       span.bar:nth-child(1)
         transition: 250ms
         transform: rotate(45deg)
