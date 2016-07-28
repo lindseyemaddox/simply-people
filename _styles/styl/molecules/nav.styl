@@ -2,7 +2,7 @@
 nav-icon-view()
   .nav-items
     a
-      span
+      .list-item
         opacity: 0
         display: block
 
@@ -16,7 +16,7 @@ nav-list-view()
     a
       text-align: left
 
-      span
+      .list-item
         opacity: 1
         display: inline
 
@@ -33,20 +33,27 @@ nav-list-view()
   letter-spacing: 4px
 
   .sub.phones
+    margin-top: 58px
+    padding-left: 24px
     a
       font-size: 1em
       text-decoration: none
       color: $black
+      padding-bottom: 0.75em
       primary-font($light)
       span
         margin-right: 10px
+        &[class^="icon"]
+          font-size: 1.75em
+          display: inline-block
+          vertical-align: top
 
   a
     display: block
     text-align: center
     font-size: 3.5em
 
-    &:not(.sub)
+    &:not(.sub), &:not(.sub a)
       margin-bottom: 10px
       position: relative
 
@@ -58,7 +65,7 @@ nav-list-view()
     &:before
       vertical-align: middle
 
-    span
+    .list-item
       font-size: 0.35em
       vertical-align: middle
       height: 0
@@ -72,7 +79,7 @@ nav-list-view()
       cursor: pointer
 
       span
-        padding-left: 2.25em
+        padding-left: .75em
         font-size: .475em
 
 [class^="list"]
@@ -102,9 +109,9 @@ nav-list-view()
   nav-icon-view()
 
   &.open
-    transform: translateX(-425px)
+    transform: translateX(-240px)
     transition: 250ms
-    width: 500px
+    width: 315px
     nav-list-view()
 
 .toggle-nav

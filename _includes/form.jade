@@ -1,0 +1,12 @@
+form(name="nav_contact" method="POST")
+	.simple_row
+		label Visibility
+		input(type="radio" name="disabled" value="false")
+		span On
+		input(type="radio" name="disabled" value="true")
+		span Off
+	.simple_row
+		label Description
+		textarea(name="desc" rows="4" cols="70")
+	.simple_row
+		input(type="submit" class="submit-btn" value="Submit")
