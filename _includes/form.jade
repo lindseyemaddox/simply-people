@@ -1,12 +1,30 @@
 form(name='nav_contact' method='POST' class='nav_contact')
 
-		label.label Visibility
-		input(type='radio' name='disabled' value='false')
-		span On
-		input(type='radio' name='disabled' value='true')
-		span Off
+    label.label Name
+    input(type='text' name='name' placeholder='name' required)
 
-		label.label Description
-		textarea(name='desc' rows='4' cols='70' class='textarea')
+    input(type='checkbox' name='im' value='candidate')
+    span I'm a Candidate
+    input(type='checkbox' name='im' value='employer')
+    span I'm an Employer
 
-		input(type='submit' class='submit-btn' value='Submit')
+    label.label Phone
+    input(type='text' name='phone' placeholder='phone' required)
+
+    label.label Linkedin URL
+    input(type='text' name='url' placeholder='url')
+
+    label.label Email
+    input(type='text' name='email' placeholder='email')
+
+    input(type='checkbox' name='updates' value='updates')
+    span Get Jobs Updates
+
+    input(type='submit' class='submit' value="We'll Holler Back")
+
+    span.icon-google
+    span.icon-linkedin
+    span.icon-twitter
+    span.icon-facebook
+    span.youtube
+    span.instagram

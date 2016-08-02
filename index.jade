@@ -31,7 +31,7 @@ block sidebar
     .nav-items
 
       .listone
-        input(type="checkbox" id="listone")
+        input(type="checkbox" id="listone" class='droppers')
 
         a.icon-diagram
           span.list-item What We Do
@@ -50,7 +50,7 @@ block sidebar
           span.list-item Resources
 
       .listtwo
-        input(type="checkbox" id="listtwo")
+        input(type="checkbox" id="listtwo" class='droppers')
 
         a.icon-gears
           span.list-item How We Do It
@@ -63,7 +63,7 @@ block sidebar
           span.list-item Team
 
       .listthree
-        input(type="checkbox" id="listthree")
+        input(type="checkbox" id="listthree" class='droppers')
 
         a.icon-people
           span.list-item Candidates
@@ -76,14 +76,14 @@ block sidebar
           span.list-item Jobs
 
       .listfour
-        input(type="checkbox" id="listfour")
+        input(type="checkbox" id="listfour" class='droppers')
         label(for="listfour")
 
         a.icon-stats
           span.list-item Employers
 
       .listfive
-        input(type="checkbox" id="listfive")
+        input(type="checkbox" id="listfive" class='droppers')
 
         a.icon-connect
           span.list-item Connect
@@ -99,6 +99,9 @@ block sidebar
           a(href='tel:16154738594')
             span.icon-phone
             span (615) 473-8594
+          a(href='')
+            span.icon-pin
+            span.map 4322 Harding Pike <br/>Nashville, TN 37205
 
         .sub.form
           include _includes/form

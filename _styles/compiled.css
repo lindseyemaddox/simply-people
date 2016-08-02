@@ -896,7 +896,7 @@ form.nav_contact textarea.textarea {
 [class^="list"] {
   position: relative;
 }
-[class^="list"] input {
+[class^="list"] input.droppers {
   position: absolute;
   left: -99999px;
   top: -99999px;
@@ -931,6 +931,9 @@ form.nav_contact textarea.textarea {
 .nav-pane .nav-items a .list-item {
   opacity: 0;
   display: block;
+}
+.nav-pane .nav-items a span {
+  display: none;
 }
 .nav-pane .nav-items .sub {
   transition: height 200ms ease;
@@ -976,6 +979,18 @@ form.nav_contact textarea.textarea {
   text-align: left;
   width: 80%;
 }
+.nav-pane.open .nav-items a span {
+  display: inline-block;
+}
+.nav-pane.open .nav-items a span.icon-pin {
+  vertical-align: middle;
+}
+.nav-pane.open .nav-items a span.map {
+  font-size: 0.75em;
+  margin-right: 0;
+  vertical-align: middle;
+  line-height: 1.4em;
+}
 .nav-pane.open .nav-items a:hover span {
   color: #37b879;
 }
@@ -1014,14 +1029,17 @@ form.nav_contact textarea.textarea {
   width: 100%;
   margin-bottom: 50px;
 }
+.toggle-nav span.m {
+  margin-left: 10px;
+}
 .toggle-nav span.m,
 .toggle-nav span.n,
 .toggle-nav span.u {
   display: inline-block;
-  font-size: 1.05rem;
+  font-size: 0.75rem;
   opacity: 0;
   transition: 250ms;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   vertical-align: middle;
 }
 .toggle-nav span.e {
@@ -1029,7 +1047,7 @@ form.nav_contact textarea.textarea {
   height: 14px;
   width: 20px;
   vertical-align: middle;
-  margin: 0 3px 0 2px;
+  margin: 0 2px;
 }
 .toggle-nav span.e.btn-close span.bar:nth-child(1) {
   transition: 250ms;
