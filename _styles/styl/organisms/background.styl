@@ -1,5 +1,6 @@
 
 .background-overlay
+  background: rgba($white-alt, 0.6)
   bottom: 0
   height: 100%
   left: 0
@@ -8,10 +9,8 @@
   top: 0
   width: 100%
   z-index: 0
-  &.video
-    background: rgba($black, 0.93)
-  &.image
-    background: rgba($white-alt, 0.6)
+  &.video, &.home
+    background: rgba($black, 0.95)
 
 video
   position: fixed
@@ -36,4 +35,6 @@ video
   bottom: 0
   opacity: 0.6
   z-index: 0
+  &.home
+    opacity: 0.2
 

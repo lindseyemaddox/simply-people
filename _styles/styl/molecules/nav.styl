@@ -19,10 +19,12 @@ nav-icon-view()
 nav-list-view()
 
   .nav-items
-    margin-left: 34px
+    margin-left: 20px
 
     .dropdown
       display: inline-block
+      width: 100%
+      height: 40px
 
     a
       text-align: left
@@ -122,10 +124,11 @@ nav-list-view()
     position: absolute
     cursor: pointer
     z-index: 1
-    width: 30px
+    width: 40px
     right: 10px
-    top: -7px
-    padding-left: 6px
+    top: 15px
+    padding-left: 0
+    height: 40px
 
 .nav-pane
   transition: 250ms
@@ -134,9 +137,26 @@ nav-list-view()
   top: 0
   height: 100vh
   width: 75px
-  background: rgba($white-alt, 0.8)
+  background-color: rgba($white-alt, 0.8)
   box-shadow: 0px 3px 10px rgba($black, 0.2)
   nav-icon-view()
+
+  &.home
+    background-color: rgba($black, 0.8)
+
+    .nav-items a
+
+      label:hover .dropdown span.bar
+        background: $primary
+
+      &:before
+        color: $white-alt
+
+      span
+        color: $white-alt
+
+      .dropdown span.bar
+        background: $white-alt
 
   &.open
     transform: translateX(-240px)
@@ -184,9 +204,9 @@ nav-list-view()
       transition: 250ms
       position: relative
       display: block
-      background: #212121
+      background: $white-alt
       border-radius: 1px
-      border-bottom: 1.8px solid lighten($black, 25%)
+      border-bottom: 1.8px solid lighten($white-alt, 25%)
       width: 20px
       height: 2.5px
 
@@ -203,18 +223,21 @@ nav-list-view()
       border-bottom-color: $primary
 
 input:checked ~ [class^="icon"]
+
   span.bar:nth-child(1)
     transition: 250ms
     transform: rotate(45deg)
     transform-origin: center center
-    margin: 0 0 0 6px
+    margin: 0px 1px 21.5px 20px
+
   span.bar:nth-child(2)
     transition: 250ms
     transform: rotate(-45deg)
     transform-origin: center center
-    margin: 0
+    margin: 0px 0px 21px -2px
 
 .dropdown
+
   span.bar
     transition: 250ms
     display: inline-block
@@ -226,9 +249,10 @@ input:checked ~ [class^="icon"]
     transition: 250ms
     transform: rotate(-40deg)
     transform-origin: center center
-    margin: 0 12px 0 0
+    margin: 0 14px 21.5px 14px
+
   span.bar:nth-child(2)
     transition: 250ms
     transform: rotate(40deg)
     transform-origin: center center
-    margin: 0 -12px 0 0
+    margin: 0px 0px 21.5px -2px
