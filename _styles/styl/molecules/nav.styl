@@ -1,6 +1,9 @@
 
 nav-icon-view()
   .nav-items
+    .dropdown
+      display: none
+
     a
       .list-item
         opacity: 0
@@ -13,6 +16,10 @@ nav-icon-view()
 nav-list-view()
   .nav-items
     margin-left: 34px
+
+    .dropdown
+      display: inline-block
+
     a
       text-align: left
 
@@ -20,29 +27,47 @@ nav-list-view()
         opacity: 1
         display: inline
 
-    [class^="list"] input:checked ~ .sub
-      opacity: 1
-      height: auto
-      margin-bottom: 10px
-      &:last-child
-        margin-bottom: 27px
+    [class^="list"] input:checked
+      & ~ .sub
+        opacity: 1
+        height: auto
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 27px
+      & ~ .icon-dropdown
+        transition: 250ms
+        transform: rotate(180deg)
 
 
 .nav-items
   margin: 111px auto 0
   letter-spacing: 4px
 
+  // .icon-dropdown
+  //   vertical-align: middle
+  //   font-size: 1em
+  //   padding-left: 1em
+  //   color: $primary
+  //   transition: 250ms
+
+  // input:checked ~ [class^='icon'] label .icon-dropdown
+  //   transform: rotate(180deg)
+  //   transform-origin: center center
+
   .sub.phones
     margin-top: 58px
     padding-left: 24px
+
     a
       font-size: 1em
       text-decoration: none
       color: $black
       padding-bottom: 0.75em
       primary-font($light)
+
       span
         margin-right: 10px
+      
         &[class^="icon"]
           font-size: 1.75em
           display: inline-block
@@ -91,11 +116,13 @@ nav-list-view()
     top: -99999px
 
   label
-    width: 100%
-    height: 4.5em
     position: absolute
     cursor: pointer
     z-index: 1
+    width: 30px
+    right: 10px
+    top: -7px
+    padding-left: 6px
 
 .nav-pane
   transition: 250ms
@@ -172,3 +199,33 @@ nav-list-view()
       background-color: $primary
       border-bottom-color: $primary
 
+input:checked ~ [class^="icon"]
+  span.bar:nth-child(1)
+    transition: 250ms
+    transform: rotate(45deg)
+    transform-origin: center center
+    margin: 0 0 0 6px
+  span.bar:nth-child(2)
+    transition: 250ms
+    transform: rotate(-45deg)
+    transform-origin: center center
+    margin: 0
+
+.dropdown
+  span.bar
+    transition: 250ms
+    display: inline-block
+    background: $primary
+    height: 20px
+    width: 1px
+
+  span.bar:nth-child(1)
+    transition: 250ms
+    transform: rotate(-40deg)
+    transform-origin: center center
+    margin: 0 12px 0 0
+  span.bar:nth-child(2)
+    transition: 250ms
+    transform: rotate(40deg)
+    transform-origin: center center
+    margin: 0 -12px 0 0
