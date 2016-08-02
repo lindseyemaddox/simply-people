@@ -924,6 +924,10 @@ form.nav_contact textarea.textarea {
 .nav-pane .nav-items .dropdown {
   display: none;
 }
+.nav-pane .nav-items a {
+  cursor: pointer;
+  transition: color 200ms ease;
+}
 .nav-pane .nav-items a .list-item {
   opacity: 0;
   display: block;
@@ -933,11 +937,17 @@ form.nav_contact textarea.textarea {
   overflow: hidden;
   height: 0;
 }
+.nav-pane [class^="list"] label {
+  display: none;
+}
 .nav-pane.home {
   background-color: rgba(43,43,43,0.8);
 }
 .nav-pane.home .nav-items a label:hover .dropdown span.bar {
   background: #37b879;
+}
+.nav-pane.home .nav-items a:hover:before {
+  color: #37b879;
 }
 .nav-pane.home .nav-items a:before {
   color: #d3cbbd;
@@ -962,7 +972,12 @@ form.nav_contact textarea.textarea {
   height: 40px;
 }
 .nav-pane.open .nav-items a {
+  cursor: pointer;
   text-align: left;
+  width: 80%;
+}
+.nav-pane.open .nav-items a:hover span {
+  color: #37b879;
 }
 .nav-pane.open .nav-items a .list-item {
   opacity: 1;
@@ -985,6 +1000,9 @@ form.nav_contact textarea.textarea {
 .nav-pane.open .nav-items [class^="list"] input:checked ~ .icon-dropdown {
   transition: 250ms;
   transform: rotate(180deg);
+}
+.nav-pane.open [class^="list"] label {
+  display: inline-block;
 }
 .toggle-nav {
   cursor: pointer;

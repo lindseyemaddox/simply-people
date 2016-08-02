@@ -7,6 +7,8 @@ nav-icon-view()
       display: none
 
     a
+      cursor: pointer
+      transition: color 200ms ease
       .list-item
         opacity: 0
         display: block
@@ -15,6 +17,9 @@ nav-icon-view()
       transition: height 200ms ease
       overflow: hidden
       height: 0
+
+  [class^="list"] label
+    display: none
 
 nav-list-view()
 
@@ -27,7 +32,12 @@ nav-list-view()
       height: 40px
 
     a
+      cursor: pointer
       text-align: left
+      width: 80%
+
+      &:hover span
+        color: $primary
 
       .list-item
         opacity: 1
@@ -53,6 +63,8 @@ nav-list-view()
         transition: 250ms
         transform: rotate(180deg)
 
+  [class^="list"] label
+    display: inline-block
 
 
 .nav-items
@@ -148,6 +160,9 @@ nav-list-view()
 
       label:hover .dropdown span.bar
         background: $primary
+
+      &:hover:before
+        color: $primary
 
       &:before
         color: $white-alt
