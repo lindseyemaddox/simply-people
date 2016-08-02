@@ -1,6 +1,8 @@
 
 nav-icon-view()
+
   .nav-items
+
     .dropdown
       display: none
 
@@ -10,10 +12,12 @@ nav-icon-view()
         display: block
 
     .sub
-      opacity: 0
+      transition: height 200ms ease
+      overflow: hidden
       height: 0
 
 nav-list-view()
+
   .nav-items
     margin-left: 34px
 
@@ -28,31 +32,30 @@ nav-list-view()
         display: inline
 
     [class^="list"] input:checked
+
       & ~ .sub
-        opacity: 1
-        height: auto
+        height: 40px
         margin-bottom: 10px
+
         &:last-child
           margin-bottom: 27px
+
+        &.phones
+          margin-bottom: 60px
+          height: auto
+
+        &.form
+          height: auto
+
       & ~ .icon-dropdown
         transition: 250ms
         transform: rotate(180deg)
 
 
+
 .nav-items
   margin: 111px auto 0
   letter-spacing: 4px
-
-  // .icon-dropdown
-  //   vertical-align: middle
-  //   font-size: 1em
-  //   padding-left: 1em
-  //   color: $primary
-  //   transition: 250ms
-
-  // input:checked ~ [class^='icon'] label .icon-dropdown
-  //   transform: rotate(180deg)
-  //   transform-origin: center center
 
   .sub.phones
     margin-top: 58px
@@ -67,7 +70,7 @@ nav-list-view()
 
       span
         margin-right: 10px
-      
+
         &[class^="icon"]
           font-size: 1.75em
           display: inline-block

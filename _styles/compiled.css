@@ -813,6 +813,20 @@ html {
     margin-left: 0;
   }
 }
+form.nav_contact {
+  width: 90%;
+}
+form.nav_contact label.label {
+  position: static;
+  cursor: inherit;
+  z-index: inherit;
+  width: 100%;
+  padding: 0;
+}
+form.nav_contact textarea.textarea {
+  resize: none;
+  width: 100%;
+}
 .nav-items {
   margin: 111px auto 0;
   letter-spacing: 4px;
@@ -911,7 +925,8 @@ html {
   display: block;
 }
 .nav-pane .nav-items .sub {
-  opacity: 0;
+  transition: height 200ms ease;
+  overflow: hidden;
   height: 0;
 }
 .nav-pane.open {
@@ -933,12 +948,18 @@ html {
   display: inline;
 }
 .nav-pane.open .nav-items [class^="list"] input:checked ~ .sub {
-  opacity: 1;
-  height: auto;
+  height: 40px;
   margin-bottom: 10px;
 }
 .nav-pane.open .nav-items [class^="list"] input:checked ~ .sub:last-child {
   margin-bottom: 27px;
+}
+.nav-pane.open .nav-items [class^="list"] input:checked ~ .sub.phones {
+  margin-bottom: 60px;
+  height: auto;
+}
+.nav-pane.open .nav-items [class^="list"] input:checked ~ .sub.form {
+  height: auto;
 }
 .nav-pane.open .nav-items [class^="list"] input:checked ~ .icon-dropdown {
   transition: 250ms;
