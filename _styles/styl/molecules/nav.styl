@@ -28,7 +28,7 @@ nav-icon-view()
 nav-list-view()
 
   .nav-items
-    margin-left: 20px
+    margin-left: 10px
 
     .dropdown
       display: inline-block
@@ -110,6 +110,8 @@ nav-list-view()
     display: block
     text-align: center
     font-size: 3.5em
+    height: 63px
+    padding-left: 5px
 
     &:not(.sub), &:not(.sub a)
       margin-bottom: 10px
@@ -165,12 +167,11 @@ nav-list-view()
   top: 0
   height: 100vh
   width: 75px
-  background-color: rgba($white-alt, 0.8)
-  box-shadow: 0px 3px 10px rgba($black, 0.2)
+  overflow: hidden
   nav-icon-view()
 
   &.home
-    background-color: rgba($black, 0.8)
+    background-color: transparent
 
     .nav-items a
 
@@ -193,6 +194,8 @@ nav-list-view()
     transform: translateX(-240px)
     transition: 250ms
     width: 315px
+    background-color: rgba($black, 0.9)
+    box-shadow: 0px 3px 10px rgba($black, 0.2)
     nav-list-view()
 
 .toggle-nav
