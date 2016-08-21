@@ -34,26 +34,4 @@ html(lang=locale)
       link(rel='stylesheet' type='text/css' href='_styles/compiled.css')
 
     script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js')
-    script(type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
-    script window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')
-    script(defer src='_scripts/jquery.flexslider.js')
-    script.
-      $(function(){
-        SyntaxHighlighter.all();
-      });
-      $(window).load(function(){
-        $('.flexslider').flexslider({
-          animation: "slide",
-          animationLoop: false,
-          itemWidth: 210,
-          itemMargin: 15,
-          minItems: 3,
-          maxItems: 3,
-          start: function(slider){
-            $('body').removeClass('loading');
-          }
-        });
-      });
-
-    script(type='text/javascript' src='_scripts/min/testimonials-min.js')
+    script(type='text/javascript' src='_scripts/min/nav-min.js')
